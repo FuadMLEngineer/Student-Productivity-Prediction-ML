@@ -1,26 +1,16 @@
-Great — a strong README can make this project look **internship-ready** if done right. I’ll give you a clean, professional version tailored to your React + ML CGPA prediction project.
+Student CGPA Prediction Using Machine Learning
 
-You can copy-paste this directly.
-
----
-
-# 📌 Student CGPA Prediction Using Machine Learning
-
-## 🚀 Overview
+Overview
 
 This project is a full-stack machine learning application that predicts a student's **CGPA** based on lifestyle and academic behavior factors. It combines a trained ML regression model with a **React frontend** to provide an interactive prediction system.
 
 The goal is to analyze how daily habits influence academic performance and visualize predictions in a simple web interface.
 
----
-
-## 🎯 Objective
+Objective
 
 To build a regression-based system that predicts CGPA using student lifestyle parameters such as study habits, sleep, stress, and extracurricular activities.
 
----
-
-## 📊 Features Used
+Features Used
 
 - Study Hours
 - Extracurricular Hours
@@ -29,33 +19,27 @@ To build a regression-based system that predicts CGPA using student lifestyle pa
 - Physical Activity Hours
 - Stress Level
 
----
-
-## 🧠 Machine Learning Model
+Machine Learning Model
 
 - Linear Regression (baseline)
 - Random Forest Regressor (improved accuracy)
 - Feature scaling and preprocessing applied
 
----
+Tech Stack used
 
-## 🖥️ Tech Stack
-
-### Frontend:
+Frontend:
 
 - React.js
 - HTML, CSS, JavaScript
 
-### Backend / ML:
+Backend / ML:
 
 - Python
 - Flask (or FastAPI if used)
 - Scikit-learn
 - Pandas, NumPy
 
----
-
-## ⚙️ Project Workflow
+Project Workflow
 
 1. Data collection (student behavior dataset)
 2. Data preprocessing & cleaning
@@ -66,41 +50,36 @@ To build a regression-based system that predicts CGPA using student lifestyle pa
 7. React frontend integration
 8. Real-time CGPA prediction UI
 
----
+Project Structure
 
-## 🌐 Project Structure
-
-```
 Student-CGPA-Prediction/
 │
-├── frontend/        # React application
-├── backend/         # Flask/FastAPI ML API
-├── model/           # Trained ML model
-├── notebooks/       # EDA & training notebooks
+├── frontend/ # React application
+├── backend/ # Flask/FastAPI ML API
+├── model/ # Trained ML model
+├── notebooks/ # EDA & training notebooks
 ├── .gitignore
 └── README.md
-```
 
----
-
-## 📈 Key Insights
+````
+ Key Insights
 
 - Study hours and sleep have strong positive impact on CGPA
 - High stress level negatively affects performance
 - Balanced lifestyle leads to better academic outcomes
 - Physical activity improves productivity indirectly
 
----
 
-## 🖥️ How to Run the Project
 
-### 1️⃣ Clone the repository
+How to Run the Project
+
+1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Student-CGPA-Prediction.git
-```
+git clone https://github.com/fumd03/Student-Productivity-Prediction-ML.git
+````
 
-### 2️⃣ Run Backend
+2. Run Backend
 
 ```bash
 cd backend
@@ -108,7 +87,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### 3️⃣ Run Frontend
+3. Run Frontend
 
 ```bash
 cd frontend
@@ -116,9 +95,7 @@ npm install
 npm start
 ```
 
----
-
-## 📊 Future Improvements
+Future Improvements
 
 - Deploy project using Render / Vercel
 - Add deep learning models
@@ -126,18 +103,14 @@ npm start
 - Add personalized study recommendations
 - Expand dataset with real survey data
 
----
-
-## 🧠 What This Project Shows
+What This Project Shows
 
 - End-to-end ML pipeline
 - Full-stack integration (React + Python API)
 - Feature engineering & regression modeling
 - Real-world problem solving approach
 
----
+Author
 
-## 👨‍💻 Author
-
-Your Name
-GitHub: [https://github.com/your-username](https://github.com/your-username)
+Fuad Mohammed
+GitHub: [https://github.com/fumd03]
