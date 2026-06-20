@@ -1,29 +1,21 @@
-import { useState } from "react";
+import StudentForm from "../components/forms/StudentForm";
+import Footer from "../components/layout/Footer";
+import PredictionCard from "../components/ui/PredictionCard";
 
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import StudentForm from "../components/StudentForm";
-import Footer from "../components/Footer";
-import PredictionCard from "../components/PredictionCard";
+import { usePrediction } from "../hooks/usePrediction";
 
 function HomePage() {
-  const [prediction, setPrediction] = useState(null);
+  const { prediction, loading, error, getPrediction } = usePrediction();
 
   return (
-    <div className="home-page">
-      <Navbar />
+    <div>
+      <StudentForm onSubmit={getPrediction} />
 
-      <section id="home">
-        <Hero />
-      </section>
+      {loading && <p>Loading...</p>}
 
-      <section id="predict">
-        <StudentForm setPrediction={setPrediction} />
+      {error && <p>{error}</p>}
 
-        {prediction && <PredictionCard prediction={prediction} />}
-      </section>
-
-      <Footer />
+      {prediction && <PredictionCard prediction={prediction} />}
     </div>
   );
 }
